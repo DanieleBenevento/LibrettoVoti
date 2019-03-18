@@ -1,12 +1,15 @@
+
 package it.polito.tdp.libretto;
 
 import java.time.LocalDate;
 
 public class Voti {
 
+	
 	private int voto;
 	private String corso;
 	private LocalDate data;
+	
 	public Voti(int voto, String corso, LocalDate data) {
 		super();
 		this.voto = voto;
@@ -31,7 +34,10 @@ public class Voti {
 	public void setData(LocalDate data) {
 		this.data = data;
 	}
-
+	@Override
+	public String toString() {
+		return "Voti [voto=" + voto + ", corso=" + corso + ", data=" + data + "]";
+	}
 	
 	
 }
