@@ -15,4 +15,16 @@ public class Libretto {
 	public void add(Voti v) {
 		voti.add(v);
 	}
+	
+	public List<Voti> CercaVoti(int punti){
+		List<Voti> result= new ArrayList<Voti>();
+		
+		for(Voti v: voti) {
+			if(v.getPunti()== punti) {
+				result.add(v);
+			}
+		}
+		return result;
+	}
+	
 }

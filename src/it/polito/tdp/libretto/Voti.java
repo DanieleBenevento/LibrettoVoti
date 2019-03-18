@@ -6,21 +6,21 @@ import java.time.LocalDate;
 public class Voti {
 
 	
-	private int voto;
+	private int punti;
 	private String corso;
 	private LocalDate data;
 	
 	public Voti(int voto, String corso, LocalDate data) {
 		super();
-		this.voto = voto;
+		this.punti = voto;
 		this.corso = corso;
 		this.data = data;
 	}
-	public int getVoto() {
-		return voto;
+	public int getPunti() {
+		return punti;
 	}
-	public void setVoto(int voto) {
-		this.voto = voto;
+	public void setPunti(int voto) {
+		this.punti = voto;
 	}
 	public String getCorso() {
 		return corso;
@@ -36,7 +36,7 @@ public class Voti {
 	}
 	@Override
 	public String toString() {
-		return "Voti [voto=" + voto + ", corso=" + corso + ", data=" + data + "]";
+		return "Voti [voto=" + punti + ", corso=" + corso + ", data=" + data + "]";
 	}
 	
 	
